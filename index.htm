@@ -1,12 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Professional Portfolio - Umesh Sapkota</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea2a33",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211111",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for modern feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #94a3b8;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <h1>My test Project</h1>
-    <h1> hello from my webpage></h1>
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark text-[#181111] dark:text-white font-display">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Sticky Navbar -->
+<header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-[#1a0f0f]/90 backdrop-blur-md">
+<div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+<div class="flex items-center gap-2">
+<div class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-xl">code</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-gray-900 dark:text-white">Umesh Sapkota</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="inline-flex h-9 items-center justify-center rounded-lg bg-primary px-4 text-sm font-bold text-white transition-colors hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900">
+<span class="mr-2 material-symbols-outlined text-[18px]">download</span>
+<span class="hidden sm:inline">Download CV</span>
+<span class="sm:hidden">CV</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-12 pb-16 lg:pt-24 lg:pb-32" id="about">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
+<div class="flex flex-col justify-center space-y-8">
+<div class="space-y-4">
+<div class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+<span class="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
+                                    Available for hire
+                                </div>
+<h1 class="text-4xl font-black tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+                                    Building digital experiences that matter.
+                                </h1>
+<p class="max-w-[600px] text-lg text-gray-600 dark:text-gray-300 md:text-xl leading-relaxed">
+                                    I specialize in crafting high-performance websites and applications. With a background in full-stack development, I bring creative ideas to life through code.
+                                </p>
+</div>
+<div class="flex flex-col gap-3 sm:flex-row">
+<a class="inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-base font-bold text-white transition-all hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900 shadow-lg shadow-primary/25" href="#contact">
+                                    Get in Touch
+                                </a>
+<a class="inline-flex h-12 items-center justify-center rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-white/5 px-8 text-base font-medium text-gray-900 dark:text-white transition-colors hover:bg-gray-50 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-gray-200" href="#projects">
+                                    View Projects
+                                </a>
+</div>
+<div class="flex items-center gap-6 pt-4 text-gray-500 dark:text-gray-400">
+<a class="hover:text-primary transition-colors" href="#">
+<span class="sr-only">GitHub</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="relative lg:ml-auto">
+<div class="relative overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-2xl">
+<div class="aspect-[4/3] w-full bg-cover bg-center" data-alt="Professional young man working on laptop in modern bright office" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB40PJ6PNvXiylpTsL8DDiLb6ZT1XBKyl1cc50SGow4ydaIuUeh0S6J9QX6ViahySFgXWpEHYwhoR-11tR8BZcWZREdqyMLhjOAPPanIW6NrNoBeTJJTdQ6Cj5eZK6W7f23rerlJKHLJo29ri5wboN1p8BcLbyvhReGXCjMS-JHsxznwPWoLBHtr0PVF3tJMe_tBUQ6O8cOESdjzDIbwcSALhTTlU5vBF1RVqHJ6lTNj2lffmPdFWPp8EMbtu3VNlNRgrMfWL91FP2s');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6 text-white">
+<div class="flex items-center gap-2 mb-2">
+<span class="flex h-3 w-3 rounded-full bg-green-500"></span>
+<span class="text-sm font-medium text-white/90">System Architecture</span>
+</div>
+<p class="font-medium text-white/80">Designing scalable solutions</p>
+</div>
+</div>
+<!-- Decorative elements -->
+<div class="absolute -bottom-6 -left-6 -z-10 h-24 w-24 rounded-full bg-primary/20 blur-2xl"></div>
+<div class="absolute -top-6 -right-6 -z-10 h-32 w-32 rounded-full bg-blue-500/20 blur-2xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack Marquee (Optional visual break) -->
+<div class="border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-[#1a0f0f] py-8">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<p class="mb-6 text-center text-sm font-semibold uppercase tracking-wider text-gray-500">Trusted Technologies</p>
+<div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale transition-all hover:grayscale-0 hover:opacity-100">
+<!-- Logos replaced with simple text for simplicity, but in real scenario would be SVGs -->
+<span class="text-xl font-bold text-gray-800 dark:text-gray-200">React</span>
+<span class="text-xl font-bold text-gray-800 dark:text-gray-200">Node.js</span>
+<span class="text-xl font-bold text-gray-800 dark:text-gray-200">TypeScript</span>
+<span class="text-xl font-bold text-gray-800 dark:text-gray-200">Python</span>
+<span class="text-xl font-bold text-gray-800 dark:text-gray-200">AWS</span>
+<span class="text-xl font-bold text-gray-800 dark:text-gray-200">Tailwind</span>
+</div>
+</div>
+</div>
+<!-- Capstone Projects Section -->
+<section class="py-16 lg:py-24 bg-gray-50 dark:bg-black/20" id="projects">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="mb-12 md:text-center max-w-3xl mx-auto">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-4">Capstone Projects</h2>
+<p class="text-lg text-gray-600 dark:text-gray-400">
+                            A selection of my best work, demonstrating my ability to solve complex problems with clean, efficient code.
+                        </p>
+</div>
+<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+<!-- Project Card 1 -->
+<div class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1e1e1e] shadow-md transition-all hover:shadow-xl hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+<div class="relative aspect-video overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Modern e-commerce dashboard interface on a laptop screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBwONW16233YBYJFE_ohk0BebhTb11LqChe_rYK4TC3bQmeQwNoEQz2fbCEeLKTOikRyt_zrx3X2VfHKmm9s8rusikslNiochmVOjFsmSuSa0O3thUOgUNcNLCAnd3uiuJxgh9yXGcROcLkH0h8o89V-kwrik8Oxbt7k4gflmr7IHRbJB9W9OJE4LrPUxlA-RFOGVgvG1vS9vHQ6YKUwnEWg6IgxczEhkX0qg7-oyiR8qY5h7UEI1r2etTx7NJoVa8qH85wbfJA1wV');"></div>
+<div class="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/10"></div>
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex flex-wrap gap-2">
+<span class="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-900/30 px-2 py-1 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10 dark:ring-blue-400/20">React</span>
+<span class="inline-flex items-center rounded-md bg-green-50 dark:bg-green-900/30 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-300 ring-1 ring-inset ring-green-600/20 dark:ring-green-400/20">Node.js</span>
+</div>
+<h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">E-commerce Platform</h3>
+<p class="mb-6 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                                    A full-featured shopping platform with real-time inventory management, Stripe integration, and an admin dashboard.
+                                </p>
+<a class="inline-flex items-center text-sm font-bold text-primary transition-colors hover:text-red-700" href="#">
+                                    View Project <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1e1e1e] shadow-md transition-all hover:shadow-xl hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+<div class="relative aspect-video overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Financial data visualization graphs and charts on a dark screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsVujKd3feio_YynL2ncL0wey4GhG5oaJFMhRfH1Bslu9sVXDJl_LS8iutDv1HBhDqp38w13HJHhgCk_6ELdL8IL5d3WEW88IEEiT_WsvXD1qqBdlt0GXUftVb9dTDETNwg8mmfkn4rijXV5CGUtb0txB2CA0ZHvtXPl1Nb4ROJErBm_pEBSw5sDG4FhsLevDehHrswnrFT9qZ1Wr_6pP_Ydm1_YVVF82PHql25HIbWFg8r3wWiORvg_lxHcfcjVU8R0H95s_yBk9f');"></div>
+<div class="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/10"></div>
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex flex-wrap gap-2">
+<span class="inline-flex items-center rounded-md bg-yellow-50 dark:bg-yellow-900/30 px-2 py-1 text-xs font-medium text-yellow-800 dark:text-yellow-300 ring-1 ring-inset ring-yellow-600/20 dark:ring-yellow-400/20">Python</span>
+<span class="inline-flex items-center rounded-md bg-gray-100 dark:bg-gray-700/50 px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-500/10 dark:ring-gray-400/20">Django</span>
+</div>
+<h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Finance Dashboard</h3>
+<p class="mb-6 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                                    Interactive data visualization tool for tracking personal finances, featuring automated categorization and budget alerts.
+                                </p>
+<a class="inline-flex items-center text-sm font-bold text-primary transition-colors hover:text-red-700" href="#">
+                                    View Project <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1e1e1e] shadow-md transition-all hover:shadow-xl hover:-translate-y-1 border border-gray-100 dark:border-gray-800">
+<div class="relative aspect-video overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Smartphone displaying a health tracking application with pulse graphics" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3gR5wrG4Cr7MulqLzYVBwvkikMZ3VfPpMM-sZjrw6zBP1ZrtjBq9bC-M23CiFZmqTo82cJmXUWelFnGihyG0PGakv4nv3ED-kCGcjwp2kx1VZR__-FxzpfwC8YR_dFfob2Sy-aHjpO_J1jYi3Svk-_wGY9jQSa3Kw69H8hhQXum9WzJUN3hrbUxP7U120KHqLj9gtEQQTuS9Ba76tgFUYFKS61Y2DOL78DNIVj-IslZPZRYVfnZHlPubuHy-WFnAWCXw_AekAD3hC');"></div>
+<div class="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/10"></div>
+</div>
+<div class="flex flex-1 flex-col p-6">
+<div class="mb-3 flex flex-wrap gap-2">
+<span class="inline-flex items-center rounded-md bg-purple-50 dark:bg-purple-900/30 px-2 py-1 text-xs font-medium text-purple-700 dark:text-purple-300 ring-1 ring-inset ring-purple-700/10 dark:ring-purple-400/20">React Native</span>
+<span class="inline-flex items-center rounded-md bg-indigo-50 dark:bg-indigo-900/30 px-2 py-1 text-xs font-medium text-indigo-700 dark:text-indigo-300 ring-1 ring-inset ring-indigo-700/10 dark:ring-indigo-400/20">Firebase</span>
+</div>
+<h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Mobile Health App</h3>
+<p class="mb-6 flex-1 text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                                    Cross-platform mobile application for tracking workouts and nutrition, synced across devices in real-time.
+                                </p>
+<a class="inline-flex items-center text-sm font-bold text-primary transition-colors hover:text-red-700" href="#">
+                                    View Project <span class="material-symbols-outlined ml-1 text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 lg:py-24" id="contact">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+<div>
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">Let's work together</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                                Have a project in mind or want to discuss a new opportunity? Send me a message and I'll get back to you within 24 hours.
+                            </p>
+<div class="mt-10 space-y-6">
+<div class="flex items-start">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="ml-4">
+<h3 class="text-base font-bold text-gray-900 dark:text-white">Email</h3>
+<p class="mt-1 text-gray-600 dark:text-gray-400">contact@sapkotaumesh4@gmail.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="ml-4">
+<h3 class="text-base font-bold text-gray-900 dark:text-white">Location</h3>
+<p class="mt-1 text-gray-600 dark:text-gray-400">Kathmandu</p>
+</div>
+</div>
+</div>
+<div class="mt-10 p-6 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-gray-800">
+<div class="flex items-center gap-4">
+<div class="h-12 w-12 flex-none rounded-full bg-cover bg-center" data-alt="Portrait of Umesh Sapkota" style="background-image: url('img.jpg')"></div>
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Available for freelance</p>
+<p class="text-sm text-gray-500 dark:text-gray-400">Accepting new projects starting January 2026</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-2xl bg-white dark:bg-[#1e1e1e] p-8 shadow-lg ring-1 ring-gray-200 dark:ring-gray-800">
+<form action="#" class="space-y-6" method="POST">
+<div class="grid gap-6 md:grid-cols-2">
+<div>
+<label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="name">Name</label>
+<div class="mt-2">
+<input class="block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary bg-white dark:bg-black/20 sm:text-sm sm:leading-6" id="name" name="name" placeholder="Jane Smith" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="email">Email</label>
+<div class="mt-2">
+<input class="block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary bg-white dark:bg-black/20 sm:text-sm sm:leading-6" id="email" name="email" placeholder="jane@example.com" type="email"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="subject">Subject</label>
+<div class="mt-2">
+<input class="block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary bg-white dark:bg-black/20 sm:text-sm sm:leading-6" id="subject" name="subject" placeholder="Project Inquiry" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white" for="message">Message</label>
+<div class="mt-2">
+<textarea class="block w-full rounded-md border-0 py-2.5 px-3 text-gray-900 dark:text-white shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-gray-700 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary bg-white dark:bg-black/20 sm:text-sm sm:leading-6" id="message" name="message" placeholder="Tell me about your project..." rows="4"></textarea>
+</div>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-md bg-primary px-3 py-3 text-sm font-bold leading-6 text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-colors" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-white dark:bg-[#1a0f0f] border-t border-gray-200 dark:border-gray-800">
+<div class="mx-auto max-w-7xl overflow-hidden px-6 py-12 sm:py-16 lg:px-8">
+<nav aria-label="Footer" class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12">
+<div class="pb-6">
+<a class="text-sm leading-6 text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#about">About</a>
+</div>
+<div class="pb-6">
+<a class="text-sm leading-6 text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#projects">Projects</a>
+</div>
+<div class="pb-6">
+<a class="text-sm leading-6 text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#contact">Contact</a>
+</div>
+<div class="pb-6">
+<a class="text-sm leading-6 text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary" href="#">Download CV</a>
+</div>
+</nav>
+<div class="mt-10 flex justify-center space-x-10">
+<a class="text-gray-400 hover:text-primary dark:text-gray-500 dark:hover:text-primary" href="#">
+<span class="sr-only">GitHub</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-gray-400 hover:text-primary dark:text-gray-500 dark:hover:text-primary" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-gray-400 hover:text-primary dark:text-gray-500 dark:hover:text-primary" href="#">
+<span class="sr-only">Twitter</span>
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+</a>
+</div>
+<p class="mt-10 text-center text-xs leading-5 text-gray-500">
+                    © 2023 Umesh Sapkota. All rights reserved.
+                </p>
+</div>
+</footer>
+</div>
+</body></html>
